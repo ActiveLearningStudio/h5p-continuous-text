@@ -38,7 +38,7 @@ H5P.ContinuousText.prototype.handleXAPI = function () {
 
 
 H5P.ContinuousText.prototype.triggerConsumed = function () {
-  var title = this.contentData.hasOwnProperty("metadata") && this.contentData.metadata.hasOwnProperty("title") ? this.contentData.metadata.title : "Twitter User Feed";
+  var title = this.contentData.hasOwnProperty("metadata") && this.contentData.metadata.hasOwnProperty("title") ? this.contentData.metadata.title : "Continuous Text";
   var xAPIEvent = this.createXAPIEventTemplate({
     id: 'http://activitystrea.ms/schema/1.0/consume',
     display: {
